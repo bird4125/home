@@ -53,9 +53,9 @@ body{font-family: Nanum; font-weight: 300;}
 .buttons>ul{width: 1440px; height: 100%;margin: 0 auto;position: relative;margin-top: 40px;}
 .buttons>ul li{position: absolute;cursor: pointer;overflow: hidden;transition: 1s;z-index: 30}
 
-.buttons>ul li.type_a{width: 715px; height: 715px;background: #afa;}
-.buttons>ul li.type_b{width: 350px; height: 350px;background: #afa;}
-.buttons>ul li.type_de{width: 350px; height: 350px; background: #afa;}
+.buttons>ul li.type_a{width: 715px; height: 715px;background: #aaf;}
+.buttons>ul li.type_b{width: 350px; height: 350px;background: #aaf;}
+.buttons>ul li.type_de{width: 350px; height: 350px; background: #aaf;}
 
 .buttons>ul li.box1{left: 0;top:0px;background: url(../images/slide1.jpg);}
 
