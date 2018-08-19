@@ -1,0 +1,54 @@
+@font-face{
+	font-family: nanum;
+	src: url(../font/NanumGothic.woff) format('woff');
+	font-weight: 300;
+}
+* { margin: 0; padding: 0; }
+ul,li{list-style: none;}
+body { background: #0b0b0b; color: #fff;font-family: nanum;}
+a{color: #fff;text-decoration: none;}
+.wrap { width: 100%; height: 100vh;position: relative;}
+.wrap .bg{position: absolute;width: 100%;height:100%;z-index: -10;}
+.wrap .bg li:nth-child(1){background: url(../images/bg.png) no-repeat center / cover; width: 100%;height: 100%;}
+.wrap .bg li:nth-child(2){background: url(../images/bg.png) no-repeat center / cover; width: 100%;height: 100%;}
+.top { height: 70px; width: 80%; position: relative; display: flex; align-items: center; margin: 0 auto; justify-content: space-between;width: 1280px}
+.top .logo { font-size: 18px; margin-left: 15px;font-weight: bold;letter-spacing: 11px}
+.top .menu_btn {width: 30px; height: 23px;margin-right: 15px;display: flex;align-items: center;}
+.top .menu_btn .box{width: 100%;height: 2px;background: #fff;position: relative;}
+.top .menu_btn .box:before{width: 100%;height: 2px; position: absolute;top: -10px; content: "";display: block;background: #fff;}
+.top .menu_btn .box:after{width: 100%;height: 2px; position: absolute;top: 10px; content: "";display: block;background: #fff;}
+
+/* main */
+input[type="radio"]{display: none;}
+.main {width: 1280px;display: flex;margin: 0 auto;height: calc(100% - 150px);align-items: center;}
+.main .nav{width: 200px;height: 100%;display: flex; align-items: center;position: relative;s}
+.main .nav:before{content: "";position: absolute; width: 100%;height: 100%; border-left: 3px solid #1f1f1f;}
+.main .nav .nav_box{width: 100%;height: 90%;display: flex;flex-flow: column;justify-content: space-between;}
+
+.main .nav .nav_box li{color: #fff;font-size: 30px;position: relative;z-index: 20;left: -3px;cursor: pointer;transition: .5s}
+.main .nav .nav_box label li:after{font-size: 12px;position: absolute;bottom: 0;left: 10px;transition:.5s;}
+
+/* checked.. */
+#nav1:checked ~ .wrap .main .nav .nav_box label:nth-child(1) li{color:yellow;font-size: 50px;transition: .5s;left: -6px}
+#nav1:checked ~ .wrap .main .nav .nav_box label:nth-child(1) li:after{color: yellow;left: 20px;bottom: 5px;transition: .5s;}
+
+#nav2:checked ~ .wrap .main .nav .nav_box label:nth-child(2) li{color:yellow;font-size: 50px;transition: .5s;left: -6px}
+#nav2:checked ~ .wrap .main .nav .nav_box label:nth-child(2) li:after{color: yellow;left: 20px;bottom: 5px;transition: .5s;}
+
+#nav3:checked ~ .wrap .main .nav .nav_box label:nth-child(3) li{color:yellow;font-size: 50px;transition: .5s;left: -6px}
+#nav3:checked ~ .wrap .main .nav .nav_box label:nth-child(3) li:after{color: yellow;left: 20px;bottom: 5px;transition: .5s;}
+
+#nav4:checked ~ .wrap .main .nav .nav_box label:nth-child(4) li{color:yellow;font-size: 50px;transition: .5s;left: -6px}
+#nav4:checked ~ .wrap .main .nav .nav_box label:nth-child(4) li:after{color: yellow;left: 20px;bottom: 5px;transition: .5s;}
+
+#nav5:checked ~ .wrap .main .nav .nav_box label:nth-child(5) li{color:yellow;font-size: 50px;transition: .5s;left: -6px}
+#nav5:checked ~ .wrap .main .nav .nav_box label:nth-child(5) li:after{color: yellow;left: 20px;bottom: 5px;transition: .5s;}
+
+
+.main .nav .nav_box label:nth-child(1) li:after{content: "FIRST";transition: .5s}
+.main .nav .nav_box label:nth-child(2) li:after{content: "SECOND";transition: .5s}
+.main .nav .nav_box label:nth-child(3) li:after{content: "THIRD";transition: .5s}
+.main .nav .nav_box label:nth-child(4) li:after{content: "FOURTH";transition: .5s}
+.main .nav .nav_box label:nth-child(5) li:after{content: "FIFTH";transition: .5s}
+.body{width: 100%;height: 100%;display: flex;align-items: center;justify-content: flex-start;}
+.body .temp{font-size: 70px;font-family: "Century Gothic";font-weight: 900;}
