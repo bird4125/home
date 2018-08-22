@@ -13,7 +13,7 @@ a{color: #fff;text-decoration: none;}
 
 
 .wrap .move{position: absolute;width: 100%;height: 100%;}
-.wrap .move .move_box{width: 3000px; height: 3000px; background: #02BFBF;transform: translateX(0px) rotate(45deg);left:calc(50% + 200px);position: absolute; top: 0;}
+.wrap .move .move_box{width: 3000px; height: 3000px; background: #02BFBF;transform: translateX(0px) rotate(45deg);left:calc(50% + 100px);position: absolute; top: 0;}
 
 
 
@@ -25,27 +25,27 @@ a{color: #fff;text-decoration: none;}
 
 @keyframes moving2top_1{
 	0%{transform: translateX(0px) rotate(45deg);}
-	50%{transform: translateX(-200px) rotate(45deg);}
+	50%{transform: translateX(500px) rotate(45deg);}
 	100%{transform: translateX(0px) rotate(45deg);}
 }
 @keyframes moving2top_2{
 	0%{transform: translateX(0px) rotate(45deg);}
-	50%{transform: translateX(-200px) rotate(45deg);}
+	50%{transform: translateX(500px) rotate(45deg);}
 	100%{transform: translateX(0px) rotate(45deg);}
 }
 @keyframes moving2top_3{
 	0%{transform: translateX(0px) rotate(45deg);}
-	50%{transform: translateX(-200px) rotate(45deg);}
+	50%{transform: translateX(500px) rotate(45deg);}
 	100%{transform: translateX(0px) rotate(45deg);}
 }
 @keyframes moving2top_4{
 	0%{transform: translateX(0px) rotate(45deg);}
-	50%{transform: translateX(-200px) rotate(45deg);}
+	50%{transform: translateX(500px) rotate(45deg);}
 	100%{transform: translateX(0px) rotate(45deg);}
 }
 @keyframes moving2top_5{
 	0%{transform: translateX(0px) rotate(45deg);}
-	50%{transform: translateX(-200px) rotate(45deg);}
+	50%{transform: translateX(500px) rotate(45deg);}
 	100%{transform: translateX(0px) rotate(45deg);}
 }
 
@@ -59,12 +59,12 @@ a{color: #fff;text-decoration: none;}
 
 
 .top { height: 70px; width: 80%; position: relative; display: flex; align-items: center; margin: 0 auto; justify-content: space-between;width: 1280px}
-.top .logo { font-size: 18px; margin-left: 15px;font-weight:bold;letter-spacing: 11px;}
-.top .logo a{color: #000}
-.top .menu_btn {width: 30px; height: 23px;margin-right: 15px;display: flex;align-items: center;}
-.top .menu_btn .box{width: 100%;height: 2px;background: #000;position: relative;}
-.top .menu_btn .box:before{width: 100%;height: 2px; position: absolute;top: -10px; content: "";display: block;background: #000;}
-.top .menu_btn .box:after{width: 100%;height: 2px; position: absolute;top: 10px; content: "";display: block;background: #000;}
+.top .logo { font-size: 19px; margin-left: 15px;font-weight:bold;letter-spacing: 11px;}
+.top .logo a{color: #fff}
+.top .menu_btn {width: 30px; height: 23px;margin-right: 15px;display: flex;align-items: center;cursor: pointer;}
+.top .menu_btn .box{width: 100%;height: 2px;background: #fff;position: relative;}
+.top .menu_btn .box:before{width: 100%;height: 2px; position: absolute;top: -10px; content: "";display: block;background: #fff;}
+.top .menu_btn .box:after{width: 100%;height: 2px; position: absolute;top: 10px; content: "";display: block;background: #fff;}
 
 /* main */
 input[type="radio"]{display: none;}
