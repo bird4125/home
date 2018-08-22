@@ -90,13 +90,13 @@ input[type="radio"]{display: none;}
 #nav2:checked ~ .wrap .main .nav .nav_box label:nth-child(2) li,
 #nav3:checked ~ .wrap .main .nav .nav_box label:nth-child(3) li,
 #nav4:checked ~ .wrap .main .nav .nav_box label:nth-child(4) li,
-#nav5:checked ~ .wrap .main .nav .nav_box label:nth-child(5) li{color:brown;font-size: 50px;transition: .5s;left: -6px}
+#nav5:checked ~ .wrap .main .nav .nav_box label:nth-child(5) li{color:yellow;font-size: 50px;transition: .5s;left: -6px;}
 
 #nav1:checked ~ .wrap .main .nav .nav_box label:nth-child(1) li:after,
 #nav2:checked ~ .wrap .main .nav .nav_box label:nth-child(2) li:after,
 #nav3:checked ~ .wrap .main .nav .nav_box label:nth-child(3) li:after,
 #nav4:checked ~ .wrap .main .nav .nav_box label:nth-child(4) li:after,
-#nav5:checked ~ .wrap .main .nav .nav_box label:nth-child(5) li:after{color: brown;left: 20px;bottom: 5px;transition: .5s;}
+#nav5:checked ~ .wrap .main .nav .nav_box label:nth-child(5) li:after{color: yellow;left: 20px;bottom: 5px;transition: .5s;;}
 
 
 
