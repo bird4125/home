@@ -57,13 +57,95 @@ body{font-family: Nanum; font-weight: 300;}
 .buttons>ul li.type_b{width: 350px; height: 350px;background: #aaf;}
 .buttons>ul li.type_de{width: 350px; height: 350px; border: 1px solid #ddd}
 
-.buttons>ul li.box1{}
-.buttons>ul li.box1 .btns_slide{width: 300%;height: 100%;display: flex;transition: 1s;}
-.buttons>ul li.box1 .btns_slide div:nth-child(1){width: 33.3%; height: 100%;background: #aaf;}
-.buttons>ul li.box1 .btns_slide div:nth-child(2){width: 33.3%; height: 100%;background: #faf;}
-.buttons>ul li.box1 .btns_slide div:nth-child(3){width: 33.3%; height: 100%;background: #aff;}
 
-.buttons>ul li.box1 .btns_btn{display: flex;position: absolute;left: 0;right: 0;bottom: 0;}
+.buttons>ul li.box6{background: url(../images/1_s.jpg) no-repeat center / cover;transition: 1s;cursor: pointer;}
+#btn6:checked ~ .buttons>ul li.box6{background: url(../images/1_1.jpg) no-repeat center / cover;transition: 1s;}
+.buttons>ul li.box10{background: url(../images/2_s.jpg) no-repeat center / cover;transition: 1s;cursor: pointer;}
+#btn10:checked ~ .buttons>ul li.box10{background: url(../images/2_1.jpg) no-repeat center / cover;transition: 1s;}
+.buttons>ul li.box11{background: url(../images/3_s.jpg) no-repeat center / cover;transition: 1s;cursor: pointer;}
+#btn11:checked ~ .buttons>ul li.box11{background: url(../images/3_1.jpg) no-repeat center / cover;transition: 1s;}
+
+
+
+.buttons>ul li.box1{}
+.buttons>ul li.box1 .in_slide {width: 100%;height: 100%;position: relative;}
+.buttons>ul li.box1 .in_slide .btns_slide{width: 300%;height: 100%;display: flex;transition: 1s;animation: sliding_1 12s infinite;position: relative;}
+.buttons>ul li.box1 .in_slide .btns_slide div:nth-child(1){width: 33.3%; height: 100%;background: url(../images/slide1.jpg) no-repeat center / cover;}
+.buttons>ul li.box1 .in_slide .btns_slide div:nth-child(2){width: 33.3%; height: 100%;background: url(../images/slide1.jpg) no-repeat center / cover;}
+.buttons>ul li.box1 .in_slide .btns_slide div:nth-child(3){width: 33.3%; height: 100%;background: url(../images/slide1.jpg) no-repeat center / cover;}
+
+.buttons>ul li.box1 .btns_btn{display: flex;position: absolute;left: calc(50% - 35px);right: 0;bottom: calc(0% + 15px);width: 70px;height: 20px;justify-content: space-between;}
+.buttons>ul li.box1 .btns_btn label{background: orange;width: 20px; height: 20px;border-radius: 50%;text-align: center;}
+.buttons>ul li.box1 .btns_btn label:nth-child(1){animation: select1 12s infinite;}
+.buttons>ul li.box1 .btns_btn label:nth-child(2){animation: select2 12s infinite;}
+.buttons>ul li.box1 .btns_btn label:nth-child(3){animation: select3 12s infinite;}
+
+
+#slide1:checked ~ .btns_slide{animation: sliding_1 12s infinite !important}
+#slide1:checked ~ .btns_btn label:nth-child(1){animation: select1 12s infinite !important;}
+#slide2:checked ~ .btns_slide{animation: sliding_2 12s infinite !important}
+#slide2:checked ~ .btns_btn label:nth-child(2){animation: select2 12s infinite !important;}
+#slide3:checked ~ .btns_slide{animation: sliding_3 12s infinite !important}
+#slide3:checked ~ .btns_btn label:nth-child(3){animation: select3 12s infinite !important;}
+
+@keyframes sliding_1 {
+	0%{margin-left: 0%}
+	17%{margin-left: -100%}
+	34%{margin-left: -100%}
+	51%{margin-left: -200%}
+	68%{margin-left: -200%}
+	85%{margin-left: 0%}
+	100%{margin-left: 0%}
+}
+@keyframes sliding_2 {
+	0%{margin-left: -100%}
+	17%{margin-left: -200%}
+	34%{margin-left: -200%}
+	51%{margin-left: 00%}
+	68%{margin-left: 00%}
+	85%{margin-left: -100%}
+	100%{margin-left: -100%}
+}
+@keyframes sliding_3 {
+	0%{margin-left: -200%}
+	17%{margin-left: 00%}
+	34%{margin-left: 00%}
+	51%{margin-left: -100%}
+	68%{margin-left: -100%}
+	85%{margin-left: -200%}
+	100%{margin-left: -200%}
+}
+@keyframes select1{
+	0%{background: yellow;}
+	17%{background: orange;}
+	34%{background: orange;}
+	51%{background: orange;}
+	68%{background: orange;}
+	85%{background: yellow;}
+	100%{background: yellow;}
+}
+
+@keyframes select2{
+	0%{background: orange;}
+	17%{background: yellow;}
+	34%{background: yellow;}
+	51%{background: orange;}
+	68%{background: orange;}
+	85%{background: orange;}
+	100%{background: orange;}
+}
+
+@keyframes select3{
+	0%{background: orange;}
+	17%{background: orange;}
+	34%{background: orange;}
+	51%{background: yellow;}
+	68%{background: yellow;}
+	85%{background: orange;}
+	100%{background: orange;}
+}
+
+
 
 #slide1:checked ~ .btns_slide{margin-left: -0%;}
 #slide2:checked ~ .btns_slide{margin-left: -100%;}
@@ -103,14 +185,14 @@ body{font-family: Nanum; font-weight: 300;}
 .buttons .default {padding: 30px;width: 83%;height: 83%;display: flex;flex-flow: column;}
 .buttons .default .h4:after{content: "";display: block;width: 50%; height: 2px; background: #faf;margin: 10px 0px}
 .buttons .default .de_title{width: 100%; height: 30px; border-bottom: 1px solid #ff872a;display: flex;position: relative;display: flex;align-items: center;padding-bottom: 2px}
-.buttons .default .de_title:hover p{width: 100%;transition: .5s;transition-timing-function: ease-in;}
-.buttons .default .de_title .more{position: absolute;right: 5%;font-size: 11px;bottom: 0;top: calc(50% - 11px);cursor: pointer;transition: .3s}
+.buttons .default .de_title .more{position: absolute;right: 5%;font-size: 12px;bottom: 0;top: calc(50% - 11px);cursor: pointer;transition: .3s}
 .buttons .default .de_title .more:hover {color:  #ff872a;transition: .3s;}
 .buttons .default .de_title p{border-bottom: 2px solid #e98b31; width: 35%;padding-bottom: 7px;font-size: 18px;font-weight: 500;transition: .5s}
 .buttons .default .dt1 p{width: 30%}
 .buttons .default .dt3 p{width: 20%}
+.buttons .default .dt4 p{width: 35%}
 
-.buttons .default .de_box {width: 100%; height: 70%; display: flex;flex-flow: column;overflow: scroll;overflow-x:hidden;line-height: 30px;margin-top: 30px}
+.buttons .default .de_box {width: 100%; height: 70%; display: flex;flex-flow: column;overflow-x:hidden;line-height: 30px;margin-top: 30px}
 .buttons .default .de_box .scroll_box {font-size: 15px;display: flex;justify-content: space-between;width: 90%;margin: 15px auto;align-items: center;}
 .buttons .default .de_box .scroll_box:hover a,
 .buttons .default .de_box .scroll_box:hover .date{color: #000;transition: .3s}

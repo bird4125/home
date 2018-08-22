@@ -1,0 +1,9 @@
+@font-face{
+	font-family: nanum;
+	src: url(../font/NanumGothic.woff) format('woff');
+	font-weight: 300;
+}
+* { margin: 0; padding: 0; }
+ul,li{list-style: none;}
+body { background: #fff; color: #000;font-family: nanum;}
+a{color: #fff;text-decoration: none;}
