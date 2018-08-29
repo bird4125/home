@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./common/css.css">
     <link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.css">
 </head>
@@ -12,10 +13,16 @@
     <header class="header">
         <div class="top">
             <div class="top_in">
-                <a href="#">로그인</a>
-                <a href="#">회원가입</a>
-                <a href="#">사이트맵</a>
-                <a href="#">홈</a>
+                <div class="top_search">
+                    <input type="text" name="search" id="search" placeholder="검색">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="top_nav">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">사이트맵</a>
+                    <a href="#">홈</a>
+                </div>
             </div>
         </div>
         <div class="bottom">
@@ -67,27 +74,27 @@
     <section class="buttons">
         <ul>
             <li class="box1 type_a">
-            	<div class="in_slide">
-            		<input type="radio" name="slide" id="slide1" checked>
-            		<input type="radio" name="slide" id="slide2">
-            		<input type="radio" name="slide" id="slide3">
-            		<div class="btns_slide">
-            			<div></div>
-            			<div></div>
-            			<div></div>
-            		</div>
-            		<div class="btns_btn">
-            			<label for="slide1"></label>
-            			<label for="slide2"></label>
-            			<label for="slide3"></label>
-            		</div>
-            	</div>
+                <div class="in_slide">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <div class="btns_slide">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="btns_btn">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                    </div>
+                </div>
             </li>
             <label for="btn2">
                 <li class="box2 type_b">
                     <div class="plus_box"></div>
                     <div class="plus">+</div>
-            	</li>
+                </li>
             </label>
             <li class="box3 type_de">
                 <div class="default">
@@ -95,86 +102,174 @@
                         <p>공지사항</p> <span class="more">더보기 &gt;</span>
                     </div>
                     <div class="de_box notice">
-                    	<div class="scroll_box">
-                    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-                    	</div>
-                    	<div class="scroll_box">
-                    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-                    	</div>
-                    	<div class="scroll_box">
-                    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-                    	</div>
-                    	<div class="scroll_box">
-                    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-                    	</div>
-                    	<div class="scroll_box">
-                    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-                    	</div>
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
                     </div>
                 </div>
             </li>
             <li class="box4 type_de">
-            	<div class="default">
-            	    <div class="de_title dt2">
-            	        <p>가정통신문</p> <span class="more">더보기 &gt;</span>
-            	    </div>
-            	    <div class="de_box notice">
-            	    	<div class="scroll_box">
-            	    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-            	    	</div>
-            	    	<div class="scroll_box">
-            	    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-            	    	</div>
-            	    	<div class="scroll_box">
-            	    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-            	    	</div>
-            	    	<div class="scroll_box">
-            	    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-            	    	</div>
-            	    	<div class="scroll_box">
-            	    		<a href="#">Lorem Ipsum dolor sit ...</a><span class="date">2018-08-20</span>
-            	    	</div>
-            	    </div>
-            	</div>
+                <div class="default">
+                    <div class="de_title dt2">
+                        <p>가정통신문</p> <span class="more">더보기 &gt;</span>
+                    </div>
+                    <div class="de_box notice">
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
+                        <div class="scroll_box">
+                            <a href="#">Lorem Ipsum dolor sit ...</a><span class="date">08-20</span>
+                        </div>
+                    </div>
+                </div>
             </li>
             <li class="box5 type_de">
-            	<a href="https://www.facebook.com/대진디자인고등학교-714884168692304/" target="blank_"></a>
-            	<div class="plus_box"></div>
-            	<div class="plus"><i class="fa fa-mouse-pointer"></i></div>
+                <a href="https://www.facebook.com/대진디자인고등학교-714884168692304/" target="blank_"></a>
+                <div class="plus_box"></div>
+                <div class="plus"><i class="fa fa-mouse-pointer"></i></div>
             </li>
             <label for="btn6">
-                <li class="box6 type_b"> 시각정보디자인과 </li>
-            </label>
-            <li class="box7 type_de">
-            	<div class="default">
-            	    <div class="de_title dt4">
-            	        <p>오늘의 급식</p> <span class="more">더보기 &gt;</span>
-            	    </div>
-            	    <div class="de_box notice">
-            	    	
-            	    </div>
-            	</div>
-            </li>
-            <label for="btn8">
-                <li class="box8 type_a">
-                	<div class="default">
-                	    <div class="de_title dt3">
-                	        <p>대진 사진방</p> <span class="more">더보기 &gt;</span>
-                	    </div>
-                	    
-                	</div>
+                <li class="box6 type_b">
+                    <div class="ment">
+                        과1
+                    </div>
                 </li>
             </label>
-            <li class="box9 type_de"> box9 type_de </li>
+            <li class="box7 type_de">
+                <div class="default">
+                    <div class="de_title dt4">
+                        <p>오늘의 급식</p>
+                    </div>
+                    <div class="de_box notice">
+                        <div class="lunch_top">
+                            <p>율무밥 해물된장국 <span>(5.6.13.17.18.)</span></p>
+                            <p>미트볼조림 <span>(2.5.6.10.12.13.)</span></p>
+                            <p>계란말이 <span>(1.5.13.)</span></p>
+                        </div>
+                        <div class="lunch_btm">
+                            <p>건새우마늘쫑볶음<span>(5.6.13.) </span></p>
+                            <p> 배추겉절이<span>(9.13.)</span></p>
+                            <p>수제딸기우유<span>(1.2.5.13.)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <label for="btn8">
+                <input type="radio" name="pic" id="pic_slide1" checked>
+                <input type="radio" name="pic" id="pic_slide2">
+                <input type="radio" name="pic" id="pic_slide3">
+                <input type="radio" name="pic" id="pic_slide4">
+                <input type="radio" name="pic" id="pic_slide5">
+                <li class="box8 type_a">
+                    <div>
+                        <div class="default">
+                            <div class="de_title dt3">
+                                <p>대진 사진방</p> <span class="more">더보기 &gt;</span>
+                            </div>
+                            <div class="pic"></div>
+                        </div>
+                </li>
+            </label>
+            <li class="box9 type_de">
+                <div class="default">
+                    <div class="de_title dt5">
+                        <p>수업중에 만들었어요</p> <span class="more">더보기 &gt;</span>
+                    </div>
+                </div>
+                <div class="de_box notice">
+                    <div class="chip"></div>
+                    <div class="chip"></div>
+                    <div class="chip"></div>
+                    <div class="chip"></div>
+                    <div class="chip"></div>
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+                </div>
+            </li>
             <label for="btn10">
-                <li class="box10 type_b"> 실내건축디자인과 </li>
+                <li class="box10 type_b">
+                    <div class="ment">
+                        과2
+                    </div>
+                </li>
             </label>
             <label for="btn11">
-                <li class="box11 type_b"> 소프트웨어콘텐츠과 </li>
+                <li class="box11 type_b">
+                    <div class="ment">
+                        과3
+                    </div>
+                </li>
             </label>
-            <li class="box12 type_de"> box12 type_de </li>
+            <li class="box12 type_de">
+                <input type="radio" name="banner" id="banner1" checked>
+                <input type="radio" name="banner" id="banner2">
+                <input type="radio" name="banner" id="banner3">
+                <input type="radio" name="banner" id="banner4">
+                <input type="radio" name="banner" id="banner5">
+                <input type="radio" name="banner" id="banner6">
+                <div class="in_banner">
+                    <div class="ban_slide">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="ban_label">
+                        <label for="banner1"></label>
+                        <label for="banner2"></label>
+                        <label for="banner3"></label>
+                        <label for="banner4"></label>
+                        <label for="banner5"></label>
+                        <label for="banner6"></label>
+                    </div>
+                </div>
+            </li>
         </ul>
     </section>
+    <div class="btm_banner">
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
     <div class="top_footer">
         <ul>
             <li class="foo_left">
@@ -194,8 +289,22 @@
         </ul>
     </div>
     <footer class="footer">
-        Copyright &copy; 2018 정태일 all rights reserved.
+        <a href="#">Copyright &copy; 2018 정태일 all rights reserved.</a>
     </footer>
+    <div class="quick">
+        <div class="qu_sticky">
+            <div class="qu_title">
+                QUICK <br>
+                MENU
+            </div>
+            <div class="qu_buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

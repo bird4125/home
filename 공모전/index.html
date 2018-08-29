@@ -4,22 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./common/app.js"></script>
+    <script type="text/javascript" src="fullpage.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./common/css.css">
+    <link rel="stylesheet" type="text/javascript" href="./common/app.js">
+    <link rel="stylesheet" type="text/css" href="fullpage.min.css">
 </head>
 
 <body>
+    <script>
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#666666', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+        autoScrolling: true,
+        fadingEffect: true
+    });
+    </script>
     <input type="radio" name="box" id="nav1" checked>
     <input type="radio" name="box" id="nav2">
     <input type="radio" name="box" id="nav3">
     <input type="radio" name="box" id="nav4">
     <input type="radio" name="box" id="nav5">
-    <div class="wrap">
-
-        <div class="move">
-            <div class="move_box">
-            	
-            </div>
-        </div>
+    <div class="wrap" id="fullpage">
         <ul class="bg">
             <li></li>
             <li></li>
@@ -27,19 +33,28 @@
             <li></li>
             <li></li>
         </ul>
+        <input type="checkbox" name="menu" id="menu_open">
         <div class="top">
-        	<input type="checkbox" name="menu" id="menu_open">
             <div class="logo">
-            	<a href="#">SN1PE</a>
+                <a href="#"><span>Save</span> A Pet</a>
             </div>
-
             <label for="menu_open">
-            	<div class="menu_btn">
-            	    <div class="box"></div>
-            	</div>
+                <div class="menu_btn">
+                    <div class="box">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </label>
         </div>
+        <aside class="aside">
+            
+        </aside>
         <div class="main">
+            <div class="click">
+                Click!↓
+            </div>
             <div class="nav">
                 <ul class="nav_box">
                     <label for="nav1">
@@ -60,13 +75,17 @@
                 </ul>
             </div>
             <div class="body">
-                <p class="temp move1"></p>
-                <p class="temp move2">Lorem ipsum dolor sit amet</p>
-                <p class="temp move3">Lorem ipsum dolor sit amet</p>
-                <p class="temp move4">Lorem ipsum dolor sit amet</p>
-                <p class="temp move5"><a href="./sub.html">Lorem ipsum dolor sit amet</a></p>
+                <p class="temp move1">저는 <span>유기견</span>입니다.</p>
+                <p class="temp move2">저는 <span>가족</span>으로부터 버림받았습니다.</p>
+                <p class="temp move3">저를 <span>"행복"</span> 으로 보듬어주세요,</p>
+                <p class="temp move4">저를 <span>"기쁨"</span> 으로 보듬어주세요,</p>
+                <p class="temp move5"><a href="./sub.html">부디, <span>당신</span>이 저의 <span>가족</span>이 되어주세요. </a></p>
+                <div class="go">
+                    <a href="./sub.html"> 메인 페이지 -> </a>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
