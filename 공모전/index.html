@@ -6,26 +6,17 @@
     <title>Document</title>
     <script src="./js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="./common/app.js"></script>
-    <script type="text/javascript" src="fullpage.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./common/css.css">
     <link rel="stylesheet" type="text/javascript" href="./common/app.js">
-    <link rel="stylesheet" type="text/css" href="fullpage.min.css">
 </head>
 
 <body>
-    <script>
-    var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#666666', '#4BBFC3', '#7BAABE', 'whitesmoke'],
-        autoScrolling: true,
-        fadingEffect: true
-    });
-    </script>
     <input type="radio" name="box" id="nav1" checked>
     <input type="radio" name="box" id="nav2">
     <input type="radio" name="box" id="nav3">
     <input type="radio" name="box" id="nav4">
     <input type="radio" name="box" id="nav5">
-    <div class="wrap" id="fullpage">
+    <div class="wrap" id="wrapping">
         <ul class="bg">
             <li></li>
             <li></li>
@@ -38,15 +29,6 @@
             <div class="logo">
                 <a href="#"><span>Save</span> A Pet</a>
             </div>
-            <label for="menu_open">
-                <div class="menu_btn">
-                    <div class="box">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-            </label>
         </div>
         <aside class="aside">
             
